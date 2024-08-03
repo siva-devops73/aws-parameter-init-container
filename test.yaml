@@ -15,3 +15,6 @@ spec:
     - name: param-test
       image: 904827379241.dkr.ecr.us-east-1.amazonaws.com/aws-parameter-init-container:latest
       imagePullPolicy: Always
+      env:
+        - name: PARAMETERS
+          value: "AMQP_USER,roboshop.prod.rabbitmq.amqp_user AMQP_PASS,roboshop.prod.rabbitmq.amqp_pass"
